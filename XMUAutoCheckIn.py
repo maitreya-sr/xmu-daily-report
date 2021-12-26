@@ -245,5 +245,7 @@ def main():
 
 
 if __name__ == '__main__':
-    time.sleep(random_time())
+    ret = random_time()
+    for _ in range(ret):
+        time.sleep(1)
     main()
